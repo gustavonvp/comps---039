@@ -10,11 +10,17 @@ export class ItemListComponent implements OnInit {
   @Input() items = [];
 
   constructor() {
-console.log(this.items);
+   console.log(this.items);
 
    }
 
   ngOnInit() {
+      
+  }
+
+
+  ngOnchanges(){
+   
   }
 
 }

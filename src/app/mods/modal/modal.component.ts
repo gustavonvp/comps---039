@@ -5,7 +5,7 @@ import { Component, OnInit, ElementRef } from '@angular/core';
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.css']
 })
-export class ModalComponent implements OnInit {
+export class ModalComponent  {
 
   constructor(private el: ElementRef) {
   // console.log(this.el.nativeElement);
