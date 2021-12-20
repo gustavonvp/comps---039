@@ -1,20 +1,24 @@
-<div (click) ="onCloseClick()" class="ui dimmer divisible active">
-        <div class="ui modal visible active">
+<div (click)="onCloseClick()" class="ui dimmer visible active">
+    
+    <div (click)="$event.stopPropagation()" class="ui modal visible active">
 
-            <i class="close icon"></i>
-                <div class="header">
-                        MODAL!
-                </div>
-                
-                <div class="content">
-                    <p>
-                        Some content for the modal widnow should go right here! 
-                    </p>
-                </div>
-                
-                <div class="action">
-                    <button class="ui botton">OK</button>
-                </div>
-        </div>
+    <div (click) ="onCloseClick()" class="ui dimmer divisible active">
+            <div class="ui modal visible active">
+
+                <i class="close icon"></i>
+                    <div class="header">
+                            MODAL!
+                    </div>
+                    
+                    <div class="content">
+                      <ng-content></ng-content>
+                    </div>
+                    
+                    <div class="action">
+                        <button class="ui botton">OK</button>
+                    </div>
+            </div>
+
+    </div>
 
 </div>
