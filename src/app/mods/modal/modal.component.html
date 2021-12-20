@@ -7,15 +7,19 @@
 
                 <i class="close icon"></i>
                     <div class="header">
-                            MODAL!
+                           <ng-content select="[modalTitle]"></ng-content>
                     </div>
                     
                     <div class="content">
                       <ng-content></ng-content>
                     </div>
                     
-                    <div class="action">
-                        <button class="ui botton">OK</button>
+                    <div class="actions">
+                        <button (click)="onCloseClick()"  class="ui botton">OK</button>
+                    </div>
+
+                    <div class="actions">
+                        <ng-content select="[modalFooter]"></ng-content>
                     </div>
             </div>
 
