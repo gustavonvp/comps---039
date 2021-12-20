@@ -9,8 +9,8 @@
     Reusable modal window with ng-content
 </p>
 
-<div modalFooter>
-    <button class="ui button">CLOSE ME!</button>
-</div>
+<ng-container modalFooter>
+    <button class="ui button" (click)="onClick()" >CLOSE ME!</button>
+</ng-container>
 
 </app-modal>
